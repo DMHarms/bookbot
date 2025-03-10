@@ -1,4 +1,10 @@
-source = "books/frankenstein.txt"
+import sys
+
+if len(sys.argv) != 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
+source = sys.argv[1]
 
 print(f"=== Report of {source} ===")
 
