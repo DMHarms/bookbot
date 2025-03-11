@@ -39,7 +39,7 @@ def character_report():
     sorted_dict = dict(character_list)
     for i in sorted_dict:
         if i.isalpha():
-            print(f"The letter '{i}' was found {sorted_dict[i]} times")
+            print(f"'{i}: {sorted_dict[i]}'")
 
 def main():
     count_words()
